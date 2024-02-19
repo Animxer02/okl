@@ -1,0 +1,13 @@
+#output {
+    font-size: small;
+    max-height: 50%;
+    overflow: scroll;
+    border: 1px solid rgb(56, 56, 56);
+    padding: 15px;
+}
+
+p .error {
+    font-weight: bold;
+    font-style: italic;
+    color: maroon;
+}

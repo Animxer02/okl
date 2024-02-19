@@ -1,0 +1,162 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+.nav-btn {
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    width: 48%;
+    transition-duration: 300ms;
+    border: 2px solid rgb(144, 206, 0);
+}
+.nav-btn:hover {
+    background-color: rgb(102, 20, 179);
+}
+
+main {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    box-sizing: border-box;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 100px;
+    width: 100%;
+    overflow: auto;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.btn-orange {
+    color: white;
+    background-color: rgb(148, 109, 36);
+}
+
+.btn-orange:hover {
+    background-color: grey;
+}
+
+.btn-orange:disabled {
+    opacity: 0.5;
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.btn-sm {
+    padding: 5px;
+    color: white;
+    width: fit-content;
+    margin-left: 5px;
+    transition-duration: 300ms;
+}
+
+.btn-danger {
+    background-color: rgb(179, 14, 14);
+}
+.btn-danger:hover {
+    background-color: red;
+}
+
+.btn-primary {
+    background-color: rgb(14, 30, 179);
+}
+.btn-primary:hover {
+    background-color: rgb(22, 0, 146);
+}
+
+.btn-update {
+    background-color: #004600;
+}
+.btn-update:hover {
+    background-color: #002f00;
+}
+
+.btn > img {
+    width: 20px;
+}
+
+.input {
+    box-sizing: border-box;
+    font-size: large;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+.input-title {
+    border: 1px solid rgb(56, 56, 56);
+    cursor: text;
+}
+
+.edit_title {
+    display: none;
+}
+
+#anime_list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    .nav-btn {
+        width: 100%;
+        font-size: medium;
+    }
+    main {
+        padding: 10px;
+    }
+    .btn {
+        min-width: fit-content;
+        font-size: medium;
+    }
+    .link {
+        min-width: 0;
+    }
+    .input {
+        font-size: medium;
+    }
+    .btn > img {
+        width: 20px;
+    }
+}

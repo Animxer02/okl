@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %}Anime List{% endblock %}
+{% block body %}
+<main>
+    <h1 class="title">Anime List</h1>
+    <input type="text" class="input" onkeyup="search()" placeholder="Search" id="search" autofocus="" autocomplete="off">
+    <div id="anime_list"></div>
+</main>
+<script>
+    const full_anime_list = {{anime | tojson}}
+</script>
+<script src="/static/anime.js"></script>
+{% endblock %}
